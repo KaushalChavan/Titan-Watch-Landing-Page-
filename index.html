@@ -1,294 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Titan Watch Collection</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    
-    <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="nav_bar">
+<body>
+   <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
         <div class="container-fluid">
-          <img class="p-1" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwb6d5816b/images/homepage/titan-logo.svg" alt="">
-          <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-4">
+            <a class="navbar-brand" href="#">
+                <img class="p-1" src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwb6d5816b/images/homepage/titan-logo.svg" alt="Titan Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#section1">Home</a>
+                        <a class="nav-link active text-uppercase" href="#section1">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#section2">Products</a>
+                        <a class="nav-link text-uppercase" href="#section2">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#section6">Contact Us</a>
+                        <a class="nav-link text-uppercase" href="#section6">Contact Us</a>
                     </li>
                 </ul>
-          </div>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <img class="me-4" src="https://www.titan.co.in/on/demandware.static/Sites-Titan-Site/-/default/dw34590559/images/headerAccount.svg" alt="">
-            </li>
-            <li class="nav-item">
-              <img class="w-50" src="https://www.titan.co.in/on/demandware.static/Sites-Titan-Site/-/default/dw0126e44f/images/headerWishlist.png" alt="">
-            </li>
-            <li class="nav-item me-4">
-              <img src="https://www.titan.co.in/on/demandware.static/Sites-Titan-Site/-/default/dw94eb68f4/images/headerCart.svg" alt="">
-            </li>
-          </ul>          
+            </div>
         </div>
-      </nav>
-
+    </nav>
 
     <!-- Section 1 -->
-
-    <section id="section1">
-    <div class="d-flex justify-content-between mt-5" id="block">
-
-            <div class="d-flex flex-column mb-3 p-5 my-3 ms-4">
-                <div class=""><h4 class="text-danger">Our Watch Collection</h4></div>
-                <div class="my-3"><h1 class="display-2 fw-bold">The New Arrival of <span class="text-danger">Titan</span> Watches</h1></div>
-                <div class="my-2"><h4 class="fs-6 fw-light">Discover Titan Watches arrivals, quality<br>comfort and innvoation for your active life.</h4></div>
-                <div class="my-2"><button type="button" class="btn btn-danger btn-lg">Shop Now</button></div>
+    <section id="section1" class="mt-5 pt-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center mt-5">
+            <div class="text-container p-4 text-center text-md-start">
+                <h4 class="text-danger">Our Watch Collection</h4>
+                <h1 class="display-3 fw-bold">The New Arrival of <span class="text-danger">Titan</span> Watches</h1>
+                <h4 class="fs-6 fw-light">Discover Titan Watches arrivals, quality comfort, and innovation for your active life.</h4>
+                <button type="button" class="btn btn-danger btn-lg mt-3">Shop Now</button>
             </div>
-
-            <div id="carouselExample" class="carousel carousel-dark slide w-50 h-50 me-4 pe-4 mt-5">
+            <div id="carouselExample" class="carousel carousel-dark slide w-75 w-md-50 mt-4 mt-md-0">
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets_1\images\product_1.jpg" class="d-block w-100 img-fluid" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets_1\images\watch_8.webp" class="d-block w-100 img-fluid" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets_1\images\watch_7" class="d-block w-100 img-fluid" alt="...">
-                </div>
+                    <div class="carousel-item active">
+                        <img src="assets_1/images/product_1.jpg" class="d-block w-100 img-fluid" alt="Product Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets_1/images/watch_8.webp" class="d-block w-100 img-fluid" alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets_1/images/watch_7" class="d-block w-100 img-fluid" alt="Product Image 3">
+                    </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
-    </div>
+        </div>
     </section>
 
-    <!-- Section 2 -->
-
-    <section id="section2">
-    <div class="ms-4" id="block">
-        <div class="flex-column p-5">
-            <div><h1>Our <span class="text-danger">Popular</span> Products</h1></div>
-            <div><p class="fw-light">Experiance top-notch quality and style with our sought-after selections.<br>Discover a world of comfort, design, and value.</p></div>
+   <!-- Section 2 -->
+<section id="section2" class="py-5">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1>Our <span class="text-danger">Popular</span> Products</h1>
+            <p class="fw-light">Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value.</p>
         </div>
-       <div class="d-flex">
-            <div class="ps-5">
-                <div class="card border-0" style="width:16rem">
-                <img src="assets_1\images\watch_7" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Titan Analog Brown Dial Men's Watch-1806QM03 with Stainless Steel..</h5>
-                    <div class="d-flex justify-content-between">
-                        <!-- <span class="value price-text " content="3,195">
-                            ₹ 3,195
-                            </span> -->
-                        <h5 class="card-subtitle text-danger mt-2"><span class="text-dark">₹</span> 3,195</h5>
-                        <div class="d-flex">
-                            <img src="assets\icons\star.svg" alt="">
-                            <h5 class="ms-2 mt-2">(4.6)</h5>
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <img src="assets_1/images/watch_7" class="card-img-top" alt="Watch Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Titan Analog Brown Dial Men's Watch-1806QM03</h5>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-subtitle text-danger">₹ 3,195</h5>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/icons/star.svg" alt="Rating">
+                                <span class="ms-2">(4.6)</span>
+                            </div>
                         </div>
+                        <a href="#" class="btn btn-danger w-100 mt-2">Add To Cart</a>
                     </div>
-                    <a href="#" class="btn btn-danger w-100 mt-1" role="button" data-bs-toggle="button">Add To Cart</a>
-                </div>
                 </div>
             </div>
-            <div class="ps-5 ms-5">
-                <div class="card border-0" style="width:16rem">
-                <img src="assets_1\images\watch_9.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sonata Poze Quartz Analog Black Dial Metal Strap Watch for Men</h5>
-                    <div class="d-flex justify-content-between">
-                        <h5 class="card-subtitle text-danger mt-2"><span class="text-dark">₹</span> 5,995</h5>
-                        <div class="d-flex">
-                            <img src="assets\icons\star.svg" alt="">
-                            <h5 class="ms-2 mt-2">(4.3)</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <img src="assets_1/images/watch_9.webp" class="card-img-top" alt="Watch Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Sonata Poze Quartz Analog Black Dial Metal Strap Watch</h5>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-subtitle text-danger">₹ 5,995</h5>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/icons/star.svg" alt="Rating">
+                                <span class="ms-2">(4.3)</span>
+                            </div>
                         </div>
+                        <a href="#" class="btn btn-danger w-100 mt-2">Add To Cart</a>
                     </div>
-                    <a href="#" class="btn btn-danger w-100 mt-1" role="button" data-bs-toggle="button">Add To Cart</a>
-                </div>
                 </div>
             </div>
-            <div class="ps-5 ms-5">
-                <div class="card border-0" style="width:16rem">
-                <img src="assets_1\images\watch_8.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Titan Quartz Analog with Day and Date Black Dial Watch for Men</h5>
-                    <div class="d-flex justify-content-between">
-                        <h5 class="card-subtitle text-danger mt-2"><span class="text-dark">₹</span> 4,399</h5>
-                        <div class="d-flex">
-                            <img src="assets\icons\star.svg" alt="">
-                            <h5 class="ms-2 mt-2">(4.5)</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <img src="assets_1/images/watch_8.webp" class="card-img-top" alt="Watch Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Titan Quartz Analog with Day and Date Black Dial Watch</h5>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-subtitle text-danger">₹ 4,399</h5>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/icons/star.svg" alt="Rating">
+                                <span class="ms-2">(4.5)</span>
+                            </div>
                         </div>
+                        <a href="#" class="btn btn-danger w-100 mt-2">Add To Cart</a>
                     </div>
-                    <a href="#" class="btn btn-danger w-100 mt-1" role="button" data-bs-toggle="button">Add To Cart</a>
-                </div>
                 </div>
             </div>
-            <div class="ps-5 ms-5">
-                <div class="card border-0" style="width:16rem">
-                <img src="assets_1\images\product_3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Titan Quartz Analog with Day and Date Blue Dial Watch for Men</h5>
-                    <div class="d-flex justify-content-between">
-                        <h5 class="card-subtitle text-danger mt-2"><span class="text-dark">₹</span> 2,699</h5>
-                        <div class="d-flex">
-                            <img src="assets\icons\star.svg" alt="">
-                            <h5 class="ms-2 mt-2">(4.3)</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <img src="assets_1/images/product_3.jpg" class="card-img-top" alt="Watch Image 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Titan Quartz Analog with Day and Date Blue Dial Watch</h5>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-subtitle text-danger">₹ 2,699</h5>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/icons/star.svg" alt="Rating">
+                                <span class="ms-2">(4.3)</span>
+                            </div>
                         </div>
+                        <a href="#" class="btn btn-danger w-100 mt-2">Add To Cart</a>
                     </div>
-                    <a href="#" class="btn btn-danger w-100 mt-1" role="button" data-bs-toggle="button">Add To Cart</a>
-                </div>
                 </div>
             </div>
-      </div>
+        </div>
     </div>
-    </section>  
+</section>
+
 
     <!-- Section 3 -->
-
-    <section id="section3">
-    <div class="d-flex justify-content-between mt-5 bg-light" id="block">
-        <div class="flex-column p-5 mt-5 ms-5">
-            <div><h1>We Provide You <span class="text-danger">Super<br>
-                Quality </span> Watches</h1></div>
-            <div><p class="fw-light mt-5 fs-5">Indulge in the epitome of elegance with our stunning timepieces.<br> Crafted with precision and style, each watch is a masterpiece of <br>luxury.</p></div>
-            <div><p class="fw-light mt-3 fs-5">Our dedication to detail and excellence ensures your satisfaction.</p></div>  
-            <div><button type="button" class="btn btn-danger btn-lg mt-2">View details</button></div>
+    <section id="section3" class="bg-light py-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="text-container text-center text-md-start">
+                <h1>We Provide You <span class="text-danger">Super Quality</span> Wrist Watch</h1>
+                <p class="fw-light fs-5">Our watches are a blend of style and precision, made with the finest materials to ensure durability and elegance.</p>
+                <button type="button" class="btn btn-danger btn-lg mt-3">Shop Now</button>
+            </div>
+            <div class="image-container mt-4 mt-md-0">
+                <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-lancardo-wrist-watches-mens-mechanical-self-winding-ion-plating-roman-display-png-image_11717345.png" class="img-fluid w-100" alt="Hero Section Image">
+            </div>
         </div>
- 
-        <div class="p-5 mt-3 mx-5">
-            <div class="mx-5"><img class="w-100 mx-3" src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-lancardo-wrist-watches-mens-mechanical-self-winding-ion-plating-roman-display-png-image_11717345.png" alt=""></div>
-        </div>
-    </div>
     </section>
 
     <!-- Section 4 -->
-
-    <section id="section4">
-    <div class="d-flex ms-5 p-5 mt-4" id="block">
-        <div class="card shadow border-top-0" style="width: 25rem; height: 14rem;">
-            <div class="card-body p-4 mt-3">
-              <img class="bg-danger rounded" src="assets\icons\truck-fast.svg" alt=""> 
-              <h4 class="card-title mt-3 fw-bold">Free shipping</h4>
-              <p class="card-text mt-2">Enjoy seamless shopping with our complimentary shipping service.</p>
-            </div>
+    <section id="section4" class="py-5">
+        <div class="container text-center">
+            <h1><span class="text-danger">New</span> Product Arrival</h1>
+            <p class="fw-light fs-5">Our latest collection has arrived. Experience cutting-edge designs with unmatched functionality. Dive into the world of our newest arrivals.</p>
+            <img src="assets_1\icons\new arrival watch.jpg" class="img-fluid mt-4" alt="New Arrival">
         </div>
-        <div class="card shadow border-top-0 ms-5" style="width: 25rem; height: 14rem;">
-            <div class="card-body p-4 mt-3">
-              <img class="bg-danger rounded" src="assets\icons\shield-tick.svg" alt=""> 
-              <h4 class="card-title mt-3 fw-bold">Secure Payment</h4>
-              <p class="card-text mt-2">Experience worry-free transactions with our secure payment options.</p>
-            </div>
-        </div>
-        <div class="card shadow border-top-0 ms-5" style="width: 25rem; height: 14rem;">
-            <div class="card-body p-4 mt-3">
-              <img class="bg-danger rounded" src="assets\icons\support.svg" alt=""> 
-              <h4 class="card-title mt-3 fw-bold">Love to help you</h4>
-              <p class="card-text mt-2">Our dedicated team is here to assist you every step of the way.</p>
-            </div>
-        </div>
-    </div>
     </section>
 
     <!-- Section 5 -->
-   
-    <section id="section5">
-    <div class="bg-light mt-5" id="block">
-        <div class="text-center p-5">
-            <h1>What Our <span class="text-danger">Customers</span> Say?</h1>
-            <p class="fw-light">Hear genuine stories from our satisfied customers about <br> their exceptional experiences with us.</p>
-        </div>
-
-        <div class="d-flex justify-content-evenly text-center" style="--bs-columns: 4; --bs-gap: 5rem;">
-            <div class="p-5">
-                <img class="w-50 rounded-circle" src="https://tse4.mm.bing.net/th?id=OIP.Wwkj6mz7ZUkF8pBMY7UvIwHaHa&pid=Api&P=0&h=180" alt="">
-                <p class="fw-light mt-2">The attention to detail and the quality of <br> the product exceeded my expectations. <br> Highly recommended!</p>
-                <h3>Tarun kumar</h3>
+    <section id="section5" class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="mb-4">Our Product <span class="text-danger">Features</span></h1>
+            <p class="fw-light fs-5 mb-5">Our watches combine elegance, precision, and durability. They are designed to suit every occasion, ensuring you look stylish and sophisticated at all times.</p>
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-3">
+                    <img class="w-25" src="https://www.svgrepo.com/show/452106/star.svg" alt="Feature Icon">
+                    <h5 class="mt-3">High Quality</h5>
+                    <p>Crafted with precision and the finest materials, ensuring a timepiece that is as reliable as it is stylish.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="w-25" src="assets_1\icons\Affordable.png" alt="Feature Icon">
+                    <h5 class="mt-3">Affordable</h5>
+                    <p>Get premium watches at prices that won't break the bank, giving you luxury within reach.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="w-25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzApHekletnlY_56TcSWXIchLX5OKUKgx0bQ&s" alt="Feature Icon">
+                    <h5 class="mt-3">Warranty</h5>
+                    <p>All our watches come with a comprehensive warranty, ensuring peace of mind with every purchase.</p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="w-25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpUV3KOzEhAvWS56E4ZmrGbNCvA4zZ_o2S_w&s" alt="Feature Icon">
+                    <h5 class="mt-3">Stylish Design</h5>
+                    <p>Designed with the latest trends in mind, our watches complement any style, making a statement of elegance.</p>
+                </div>
             </div>
-            <div class="p-5">
-                <img class="w-50 rounded-circle" src="https://tse4.explicit.bing.net/th?id=OIP.R8m0ojgAiuCEclGS9eVSBAAAAA&pid=Api&P=0&h=180" alt="">
-                <p class="fw-light mt-2">The product not only met but exceeded <br> my expectations. I'll definitely be a <br> returning customer!</p>
-                <h3>Kiya Malhotra</h3>
-            </div>
         </div>
-    </div>
     </section>
 
     <!-- Section 6 -->
-    
-    <section id="section6">
-    <div class="d-flex justify-content-evenly p-5 mt-5" id="block">
-         <div>
-            <h1>Sign Up for <span class="text-danger">Updates</span></h1>
-         </div>
-
-         <div class="input-group w-50">
-            <input type="text" class="form-control" placeholder="subscribe@titan.com" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary w-25 bg-danger text-light shadow border-top-0" type="button" id="button-addon2">Sign Up</button>
-          </div>
-    </div>
+    <section id="section6" class="py-5">
+        <div class="container text-center py-5">
+            <h1>Contact Us</h1>
+            <p class="fw-light fs-5">We're here to assist you. Reach out to us with any queries, and our team will respond promptly.</p>
+            <form class="row g-3 justify-content-center mt-4">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Enter Your Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Enter Your Email">
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" rows="4" placeholder="Enter Your Message"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+                </div>
+            </form>
+        </div>
     </section>
+    <button id="backToTop" class="btn btn-danger">↑ Top</button>
 
-    <!-- Section 7 -->
-
-    <section id="section7">
-    <div class="w-100 bg-light p-5 mt-5" id="block">
-        <div class="mb-4">
-            <img class="" src="assets_1\icons\logo_footer-removebg-preview.png" alt="">
-            <p class="fw-light">Gear up for the new term with a sleek Titan watch <br> from your nearest Titan store. Find your perfect <br> style in-store and unlock exclusive rewards.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Titan Watches. All Rights Reserved.</p>
         </div>
-
-        <div class="d-flex">
-            <img class="bg-light rounded mx-2" src="assets\icons\facebook.svg" alt="">
-            <img class="bg-light rounded mx-2" src="assets\icons\twitter.svg" alt="">
-            <img class="bg-light rounded mx-2" src="assets\icons\instagram.svg" alt="">
-        </div>
+    </footer>
 
 
-        <div class="">
-            <div class="d-flex justify-content-between">
-              <div class="my-4">
-                <h4 class="mb-3">Collections</h4>
-                <h6 class="fw-light">Titon Automatics</h6> 
-                <h6 class="fw-light">Police Batman</h6> 
-                <h6 class="fw-light">Stellar</h6>
-                <h6 class="fw-light">Grandmaster</h6>
-              </div>
-              <div class="my-4">
-                <h4 class="mb-3">Cutomer Service</h4>
-                <h6 class="fw-light">Payment Options</h6> 
-                <h6 class="fw-light">Track Order</h6> 
-                <h6 class="fw-light">Encircle Program</h6>
-                <h6 class="fw-light">Find Titan World Stores</h6>
-              </div>
-              <div class="my-4">
-                <h4 class="mb-3">About Titan</h4>
-                <h6 class="fw-light">Brand Protection</h6> 
-                <h6 class="fw-light">Corporate</h6> 
-                <h6 class="fw-light">Careers</h6>
-              </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
 
+</html>
